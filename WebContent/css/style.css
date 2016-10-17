@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 13px Helvetica, Arial;
+}
+
+#input-username {
+	height: 40px;
+}
+
+#msg-form {
+	background: #ADD8E6;
+	padding: 3px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-radius: 3px;
+	margin: 0;
+	height: 10%;
+}
+
+#msg-form input {
+	border: 0;
+	padding: 10px;
+	width: 90%;
+	margin-right: .5%;
+}
+
+#msg-form .input-group {
+	padding: 3px;
+	height: 100%;
+}
+
+#msg-form #input-msg {
+	padding: 15px;
+    margin: 0px 4px 0px 0px;
+    border-radius: 10px;
+    height: 100%;
+    width: 90%;
+}
+
+#msg-form button {
+	height: 100%;
+	width: 9%;
+}
+
+#messages {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#messages li {
+    width: 100%;
+	overflow: auto;
+}
+
+#messages li div {
+	padding: 10px 10px;
+	max-width: 30%;
+	border-radius: 20px;
+    margin: 5px;
+    background:#f1f1f1;
+    overflow: auto;
+}
+
+#messages li div.own-msg {
+	float:right;
+	background:#ADD8E6;
+}
+
+#messages li div.own-msg .timestamp{
+	color: #08c;
+}
+
+#messages li div:before {
+    content: "";
+    position: absolute;
+    top: 50%;                         
+    margin-top: -15px;                 
+    left:-30px;
+    border: solid 15px transparent;
+    border-right-color: #FFF;
+    z-index: 1;
+}
+
+#messages li span.timestamp {
+	font-size: smaller;
+	float:right;
+	color: #afafaf;
+}
+
+/* #messages li:nth-child(odd) {
+	background: #eee;
+} */
+
+.connected-alert, .disconnected-alert {
+	position: absolute;
+    margin: auto;
+    top: 15px;
+    right: 0;
+    /* bottom: 0; */
+    left: 0;
+    width: 30%;
+    text-align: center;
+}
+
+.connected, .disconnected {
+	text-align: center;
+    padding: 0px !important;
+    background: none !important;
+    min-width: 99% !important;
+}
